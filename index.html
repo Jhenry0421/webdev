@@ -20,3 +20,30 @@
       
   </body>
 </html>
+<section>
+  <header><h3>Testing a Button</h3></header>
+  <button type="button" onclick="alert('You clicked the button')">
+    Click Me!
+  </button>
+</section>
+<section>
+  <header><h3>Current Date and Time</h3></header>
+  <script>
+    //create a variable
+    currentDt = new Date();
+    //variable to hold the string representation of the current date
+    localtime = currentDt.toString();
+    uniTime = currentDt.toGMTString();
+    
+    //display or write the time on page
+    document.write("<p><strong>Local time:</strong> " + localTime + "</p>")
+     document.write("<p><strong>Local time:</strong> " + UniversalTime + "</p>")
+    
+    hour = currentDt.getHours(); //get the hours from current time
+    minutes = currentDt.getMinutes(); //get the minutes from current time 
+    seconds = currentDt.getSeconds(); //get the seconds from the current time
+    seconds = currentDt.getMiliseconds(); //get the miliseconds from the current time
+    
+    document.write("<p><strong>" + hours + ":" + minutes + ":" + seconds + ":" + miliseconds "</strong></p>")
+  </script>
+  
